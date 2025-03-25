@@ -4,8 +4,12 @@ import NotesRoute from "./routes/NotesRoute.js";
 
 const app = express();
 
-app.get('/notes', (req, res) => {
+app.get('/', (req, res) => {
   res.send('Notes endpoint working');
+});
+
+app.listen(8080, '0.0.0.0', () => {
+  console.log('Server running on port 8080');
 });
 
 app.use(cors());
