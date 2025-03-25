@@ -4,6 +4,10 @@ import NotesRoute from "./routes/NotesRoute.js";
 
 const app = express();
 
+app.get('/notes', (req, res) => {
+  res.send('Notes endpoint working');
+});
+
 app.use(cors());
 app.use(express.json());
 app.use(NotesRoute);
