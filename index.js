@@ -3,6 +3,7 @@ import cors from "cors";
 import NotesRoute from "./routes/NotesRoute.js";
 
 const app = express();
+const cors = require('cors');
 
 app.get('/', (req, res) => {
   res.send('Notes endpoint working');
